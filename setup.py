@@ -8,12 +8,13 @@ setup(
     zip_safe=False,
     entry_points={
         'cldfbench.dataset': [
-            'himmiclex-cldf=cldfbench_himmiclex-cldf:Dataset',
+            'himmiclex-cldf=cldfbench_himmiclex_cldf:Dataset',
         ]
     },
     install_requires=[
         'cldfbench',
-        'cldflex'
+        'cldflex',
+        'pyglottolog'
     ],
     extras_require={
         'test': [
