@@ -17,7 +17,7 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/fmatter/himmiclex-cldf",
-            "dc:created": "0a70df4"
+            "dc:created": "ec9a5ee"
         }
     ],
     "prov:wasGeneratedBy": [

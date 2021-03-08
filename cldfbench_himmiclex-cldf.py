@@ -28,7 +28,6 @@ class Dataset(BaseDataset):
             "pnb": "pan" #file is erroneously tagged as eastern punjabi
         }
         for iso in open("etc/isos.txt").read().split("\n"):
-            print(iso)
             if iso in remap:
                 new = remap[iso]
             else:
