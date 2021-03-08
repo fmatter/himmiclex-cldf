@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- See https://github.com/sillsdev/lift-standard for more information on the format used here. -->
+<lift producer="SIL.FLEx 8.3.13.43193" version="0.13">
+<header>
+<ranges>
+<range id="dialect" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="etymology" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="grammatical-info" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="lexical-relation" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="note-type" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="paradigm" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="reversal-type" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="semantic-domain-ddp4" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="status" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="users" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="location" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<!-- The following ranges are produced by FieldWorks Language Explorer, and are not part of the LIFT standard. -->
+<range id="anthro-code" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="translation-type" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<!-- The parts of speech are duplicated in another range because derivational affixes require a "From" PartOfSpeech as well as a "To" PartOfSpeech. -->
+<range id="from-part-of-speech" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="morph-type" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="exception-feature" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="inflection-feature" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="inflection-feature-type" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+<range id="do-not-publish-in" href="file:///home/florianm/Dropbox/Uni/Research/clld/himmiclex-cldf/etc/puroik/puroik.lift-ranges"/>
+</ranges>
+<fields>
+<field tag="cv-pattern">
+<form lang="en"><text>This records the syllable pattern for a LexPronunciation in FieldWorks.</text></form>
+</field>
+<field tag="tone">
+<form lang="en"><text>This records the tone information for a LexPronunciation in FieldWorks.</text></form>
+</field>
+<field tag="comment">
+<form lang="en"><text>This records a comment (note) in a LexEtymology in FieldWorks.</text></form>
+</field>
+<field tag="import-residue">
+<form lang="en"><text>This records residue left over from importing a standard format file into FieldWorks (or LinguaLinks).</text></form>
+</field>
+<field tag="literal-meaning">
+<form lang="en"><text>This field is used to store a literal meaning of the entry.  Typically, this field is necessary only for a compound or an idiom where the meaning of the whole is different from the sum of its parts.</text></form>
+</field>
+<field tag="summary-definition">
+<form lang="en"><text>A summary definition (located at the entry level in the Entry pane) is a general definition summarizing all the senses of a primary entry. It has no theoretical value; its use is solely pragmatic.</text></form>
+</field>
+<field tag="scientific-name">
+<form lang="en"><text>This field stores the scientific name pertinent to the current sense.</text></form>
+</field>
+</fields>
+</header>
+<entry dateCreated="2021-03-08T09:06:26Z" dateModified="2021-03-08T09:06:26Z" id="bəlíŋ_be4ac192-631c-4c0e-a811-30d26be7af4e" guid="be4ac192-631c-4c0e-a811-30d26be7af4e">
+<lexical-unit>
+<form lang="suv"><text>bəlíŋ</text></form>
+</lexical-unit>
+<trait  name="morph-type" value="stem"/>
+<sense id="4dbcc1de-6daa-4b31-aeb4-6f1f7fa96c9b">
+<gloss lang="en"><text>world</text></gloss>
+</sense>
+</entry>
+<entry dateCreated="2021-03-08T09:06:46Z" dateModified="2021-03-08T09:06:59Z" id="məhjɛ̃̀1_9282262a-b8fd-43c8-ab8c-6e4bb75c3459" guid="9282262a-b8fd-43c8-ab8c-6e4bb75c3459" order="1">
+<lexical-unit>
+<form lang="suv"><text>məhjɛ̃̀</text></form>
+</lexical-unit>
+<trait  name="morph-type" value="stem"/>
+<sense id="773560c0-b32c-47ac-881a-4f019930ab5a">
+<gloss lang="en"><text>land</text></gloss>
+</sense>
+</entry>
+<entry dateCreated="2021-03-08T09:06:59Z" dateModified="2021-03-08T09:06:59Z" id="məhjɛ̃̀2_d005d86b-c6c0-44d8-8b5f-383521083203" guid="d005d86b-c6c0-44d8-8b5f-383521083203" order="2">
+<lexical-unit>
+<form lang="suv"><text>məhjɛ̃̀</text></form>
+</lexical-unit>
+<trait  name="morph-type" value="stem"/>
+<sense id="301675de-38e1-4b84-8887-967db1cf374e">
+<gloss lang="en"><text>soil</text></gloss>
+</sense>
+</entry>
+<entry dateCreated="2021-03-08T09:07:12Z" dateModified="2021-03-08T09:07:12Z" id="məhjɛ̃̀mɔ_1b0c7ed4-d3ce-4393-bb47-a3419085e031" guid="1b0c7ed4-d3ce-4393-bb47-a3419085e031">
+<lexical-unit>
+<form lang="suv"><text>məhjɛ̃̀mɔ</text></form>
+</lexical-unit>
+<trait  name="morph-type" value="stem"/>
+<sense id="a173a463-2832-4f6a-a23a-c11a493ccad8">
+<gloss lang="en"><text>dust</text></gloss>
+</sense>
+</entry>
+<entry dateCreated="2021-03-08T09:07:26Z" dateModified="2021-03-08T09:07:26Z" id="kaʧuɛ̃̀_e3c73046-1e94-4b68-9d4f-a80a557ae13a" guid="e3c73046-1e94-4b68-9d4f-a80a557ae13a">
+<lexical-unit>
+<form lang="suv"><text>kaʧuɛ̃̀</text></form>
+</lexical-unit>
+<trait  name="morph-type" value="stem"/>
+<sense id="454d3ad9-338d-4000-a2d0-ea6767ab4d95">
+<gloss lang="en"><text>mud</text></gloss>
+</sense>
+</entry>
+<entry dateCreated="2021-03-08T09:07:51Z" dateModified="2021-03-08T09:07:51Z" id="sə́mpjɛ́_050d19e9-9b0e-4339-954b-fafdeb43a6f2" guid="050d19e9-9b0e-4339-954b-fafdeb43a6f2">
+<lexical-unit>
+<form lang="suv"><text>sə́mpjɛ́</text></form>
+</lexical-unit>
+<trait  name="morph-type" value="stem"/>
+<sense id="9953087d-9801-4a25-a4cc-54e28a6d7e4d">
+<gloss lang="en"><text>sand</text></gloss>
+</sense>
+</entry>
+<entry dateCreated="2021-03-08T09:08:20Z" dateModified="2021-03-08T09:08:20Z" id="avjáʔ_231db216-3ebd-4b91-8f4e-a0ba1ece04e5" guid="231db216-3ebd-4b91-8f4e-a0ba1ece04e5">
+<lexical-unit>
+<form lang="suv"><text>avjáʔ</text></form>
+</lexical-unit>
+<trait  name="morph-type" value="stem"/>
+<sense id="944ed694-78bd-456e-8b97-6f33247ba3d2">
+<gloss lang="en"><text>cliff</text></gloss>
+</sense>
+</entry>
+<entry dateCreated="2021-03-08T09:08:47Z" dateModified="2021-03-08T09:08:47Z" id="wúʔ_1d9d0ba6-40bf-4e2b-bec3-787fa04ce961" guid="1d9d0ba6-40bf-4e2b-bec3-787fa04ce961">
+<lexical-unit>
+<form lang="suv"><text>wúʔ</text></form>
+</lexical-unit>
+<trait  name="morph-type" value="stem"/>
+<sense id="fb83fc77-2220-424a-ac23-b3b006c2a05b">
+<gloss lang="en"><text>cave</text></gloss>
+</sense>
+</entry>
+<entry dateCreated="2021-03-08T09:09:14Z" dateModified="2021-03-08T09:09:14Z" id="phɨ̀ŋ_b125c6be-9d8d-433f-8d72-a5ce56e0452a" guid="b125c6be-9d8d-433f-8d72-a5ce56e0452a">
+<lexical-unit>
+<form lang="suv"><text>phɨ̀ŋ</text></form>
+</lexical-unit>
+<trait  name="morph-type" value="stem"/>
+<sense id="82df0caf-0571-4f71-96ee-6908e6b4be4c">
+<gloss lang="en"><text>mountain</text></gloss>
+</sense>
+</entry>
+</lift>

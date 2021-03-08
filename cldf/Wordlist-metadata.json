@@ -11,6 +11,15 @@
     "dc:license": "-",
     "dc:source": "sources.bib",
     "dc:title": "himmiclex",
+    "dcat:accessURL": "https://github.com/fmatter/himmiclex-cldf",
+    "prov:wasDerivedFrom": [
+        {
+            "rdf:type": "prov:Entity",
+            "dc:title": "Repository",
+            "rdf:about": "https://github.com/fmatter/himmiclex-cldf",
+            "dc:created": "0a70df4"
+        }
+    ],
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
@@ -29,7 +38,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 41001,
+            "dc:extent": 39712,
             "tableSchema": {
                 "columns": [
                     {
@@ -145,7 +154,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 33,
+            "dc:extent": 32,
             "tableSchema": {
                 "columns": [
                     {

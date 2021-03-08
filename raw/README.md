@@ -1,1 +1,1 @@
-Raw data downloaded 2021-03-07T18:03:03.034987
+Raw data downloaded 2021-03-07 from https://spraakbanken.gu.se/projekt/digital-areal-linguistics

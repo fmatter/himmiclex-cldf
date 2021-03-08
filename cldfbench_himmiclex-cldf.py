@@ -5,6 +5,8 @@ import random
 
 from cldfbench import Dataset as BaseDataset
 
+from cldflex import lift2cldf
+
 import pseudo_words
 
 lg_dic = {}
@@ -36,7 +38,7 @@ class Dataset(BaseDataset):
     def cmd_makecldf(self, args):
         from csvw.dsv_dialects import Dialect
         
-        himalayan_list = ["goe", "loy", "sip", "dzo", "xkz", "grt", "aeu", "dhi", "txo", "mxj", "lep", "lif", "thf", "blk", "cvg", "suv", "wpr", "mla", "tan", "apt", "mhu", "clk", "duu"]
+        himalayan_list = ["goe", "loy", "sip", "dzo", "xkz", "grt", "aeu", "dhi", "txo", "mxj", "lep", "lif", "thf", "blk", "cvg", "suv", "mla", "tan", "apt", "mhu", "clk", "duu"]
         
         lang_lits = {}
         for row in self.etc_dir.read_csv("links.csv", dicts=False):
@@ -119,20 +121,10 @@ class Dataset(BaseDataset):
                                 "ID": param_id,
                                 "Name": row["Parameter"]
                             })
-
-            #add some randomly generated words for the himalayan languages
-            for param_id in params:
-                if param_id in ["S01_310"]: continue # 'water', adding actual data below…
-                for iso in himalayan_list:
-                    writer.objects['FormTable'].append({
-                                "ID": iso + param_id,
-                                'Parameter_ID': param_id,
-                                'Language_ID': iso,
-                                'Form': pseudo_words.pseudo_word(),
-                                "Source": [random_source(lg_dic[iso])]
-                            })
-
-            #add example data for 'water'
+                            
+            added_entries = []
+            
+            #add example data for 'water' from csv file
             for row in self.etc_dir.read_csv("example_data.csv", dicts=True):
                 writer.objects['FormTable'].append({
                     "ID": row["Language_ID"] + row['Parameter_ID'],
@@ -141,6 +133,39 @@ class Dataset(BaseDataset):
                     'Form': row['Value'],
                     "Source": [row["Source"] + "[" + row["Pages"] + "]"]
                 })
+                added_entries.append(row["Language_ID"] + row['Parameter_ID'])
+                
+            #add data from Puroik flex lift export
+            lift2cldf.convert(
+                lift_file = "raw/puroik/puroik.lift",
+                lg_id="suv"
+            )
+            flex_maps = {}
+            for mapping in self.etc_dir.read_csv("flex_maps.csv", dicts=True):
+                flex_maps[mapping["Meaning"]] = mapping["ID"]
+            for entry in csv.DictReader(open("raw/puroik/puroik_from_lift.csv")):
+                param_id = flex_maps[entry["Meaning"]]
+                writer.objects['FormTable'].append({
+                            "ID": entry["Language_ID"] + param_id,
+                            'Parameter_ID': param_id,
+                            'Language_ID': entry["Language_ID"],
+                            'Form': entry["Form"],
+                            "Source": ["g:Lieberherr:Bulu-Puroik"]
+                        })
+                added_entries.append(entry["Language_ID"] + param_id)
+                        
+            #add some randomly generated words for the himalayan languages
+            for param_id in params:
+                for iso in himalayan_list:
+                    if iso + param_id in added_entries: continue # real data already added above
+                    writer.objects['FormTable'].append({
+                                "ID": iso + param_id,
+                                'Parameter_ID': param_id,
+                                'Language_ID': iso,
+                                'Form': pseudo_words.pseudo_word(),
+                                "Source": [random_source(lg_dic[iso])]
+                            })
+
 
         #put in some random data about classifiers
         with self.cldf_writer(args = None, cldf_spec = self.cldf_specs_dict["structure"], clean=False) as writer:
